@@ -88,18 +88,27 @@ const Home = () => {
 
       {/* Yuan Rate Section */}
       <section className="py-16 bg-gm-gray-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-card rounded-2xl p-8 shadow-card text-center">
-            <h2 className="text-3xl font-bold text-gm-black mb-4">
-              <span className="text-4xl text-red-600">{currentRate}</span> — курс юаня на сегодня 🔥
-            </h2>
-            <p className="text-lg text-gm-gray-dark mb-6">
-              Ловите момент🙌 В прошлый понедельник курс был 12.61, что будет еще через неделю — неизвестно.
-            </p>
-            <p className="text-gm-gray-dark">
-              Даже наши клиенты ни раз говорили, как важно не ждать подходящего момента, а покупать 
-              здесь и сейчас, когда курс хороший.
-            </p>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-gradient-card rounded-2xl p-8 shadow-card">
+              <h2 className="text-3xl font-bold text-gm-black mb-4">
+                <span className="text-4xl text-red-600">{currentRate}</span> — курс юаня на сегодня 🔥
+              </h2>
+              <p className="text-lg text-gm-gray-dark mb-6">
+                Ловите момент🙌 В прошлый понедельник курс был 12.61, что будет еще через неделю — неизвестно.
+              </p>
+              <p className="text-gm-gray-dark">
+                Даже наши клиенты ни раз говорили, как важно не ждать подходящего момента, а покупать 
+                здесь и сейчас, когда курс хороший.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <img
+                src="/lovable-uploads/77a53502-7ffc-4391-890a-4251f45e3184.png"
+                alt="График изменения курса юаня - было 12,61 ₽, стало 12,13 ₽"
+                className="w-full max-w-md h-auto rounded-2xl shadow-card"
+              />
+            </div>
           </div>
         </div>
       </section>
