@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout/Layout";
 import ContactButtons from "@/components/UI/ContactButtons";
-import { MapPin, Mail, Clock, Phone } from "lucide-react";
+import { MapPin, Mail, Clock, Phone, Send, MessageCircle } from "lucide-react";
 
 const Contacts = () => {
   const contactInfo = [
@@ -36,14 +36,14 @@ const Contacts = () => {
       handle: "@manager_gm_bot",
       description: "Основной канал связи",
       bgColor: "bg-blue-600 hover:bg-blue-700",
-      icon: "📲"
+      icon: "Send"
     },
     {
       platform: "WhatsApp", 
       handle: "+7 925 476-55-28",
       description: "Альтернативный способ связи",
       bgColor: "bg-green-600 hover:bg-green-700",
-      icon: "📞"
+      icon: "MessageCircle"
     }
   ];
 
@@ -119,8 +119,8 @@ const Contacts = () => {
               {socialContacts.map((social, index) => (
                 <div key={index} className="bg-gm-white p-8 rounded-2xl shadow-card">
                   <div className="flex items-center mb-6">
-                    <div className={`${social.bgColor} text-white p-4 rounded-full mr-4 transition-smooth`}>
-                      <span className="text-2xl">{social.icon}</span>
+                    <div className={`${social.bgColor} text-white p-4 rounded-full mr-4 transition-smooth flex items-center justify-center`}>
+                      {social.icon === "Send" ? <Send size={24} /> : <MessageCircle size={24} />}
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gm-black">{social.platform}</h3>

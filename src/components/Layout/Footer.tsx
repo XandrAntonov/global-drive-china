@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Send, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -64,14 +65,14 @@ const Footer = () => {
                 href="https://t.me/manager_gm_bot"
                 className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-smooth"
               >
-                <span>📲</span>
+                <Send size={18} />
                 <span>@manager_gm_bot</span>
               </a>
               <a
                 href="https://wa.me/79254765528"
                 className="flex items-center space-x-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-smooth"
               >
-                <span>📞</span>
+                <MessageCircle size={18} />
                 <span>+7 925 476-55-28</span>
               </a>
             </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Send, MessageCircle } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,14 +54,14 @@ const Header = () => {
               href="https://t.me/manager_gm_bot"
               className="flex items-center space-x-2 bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition-smooth"
             >
-              <span>📲</span>
+              <Send size={16} />
               <span className="text-sm">Telegram</span>
             </a>
             <a
               href="https://wa.me/79254765528"
               className="flex items-center space-x-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition-smooth"
             >
-              <span>📞</span>
+              <MessageCircle size={16} />
               <span className="text-sm">WhatsApp</span>
             </a>
           </div>
@@ -96,14 +96,14 @@ const Header = () => {
                   href="https://t.me/manager_gm_bot"
                   className="flex items-center space-x-2 bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition-smooth"
                 >
-                  <span>📲</span>
+                  <Send size={16} />
                   <span className="text-sm">Telegram</span>
                 </a>
                 <a
                   href="https://wa.me/79254765528"
                   className="flex items-center space-x-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition-smooth"
                 >
-                  <span>📞</span>
+                  <MessageCircle size={16} />
                   <span className="text-sm">WhatsApp</span>
                 </a>
               </div>
