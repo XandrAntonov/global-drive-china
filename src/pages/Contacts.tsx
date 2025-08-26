@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import ContactButtons from "@/components/UI/ContactButtons";
 import { MapPin, Mail, Clock, Phone, Send, MessageCircle } from "lucide-react";
+import customerServiceImage from "@/assets/customer-service.jpg";
 
 const Contacts = () => {
   const contactInfo = [
@@ -73,14 +74,25 @@ const Contacts = () => {
       <div className="bg-gm-white">
         {/* Hero Section */}
         <section className="bg-gradient-hero text-gm-white py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Контакты Global Motors
-            </h1>
-            <p className="text-xl text-gm-silver mb-8">
-              Мы всегда на связи — выберите удобный способ для общения
-            </p>
-            <ContactButtons className="justify-center" />
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                  Контакты Global Motors
+                </h1>
+                <p className="text-xl text-gm-silver mb-8">
+                  Мы всегда на связи — выберите удобный способ для общения
+                </p>
+                <ContactButtons className="justify-start" />
+              </div>
+              <div className="relative">
+                <img
+                  src={customerServiceImage}
+                  alt="Служба поддержки Global Motors - мы всегда готовы ответить на ваши вопросы"
+                  className="w-full h-auto rounded-2xl shadow-hero"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
