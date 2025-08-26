@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout/Layout";
 import ContactButtons from "@/components/UI/ContactButtons";
-import carTransportImage from "@/assets/car-transport.jpg";
+import autoCarrierImage from "@/assets/auto-carrier.jpg";
 
 const Process = () => {
   const processSteps = [
@@ -84,8 +84,8 @@ const Process = () => {
               </div>
               <div className="relative">
                 <img
-                  src={carTransportImage}
-                  alt="Автовоз перевозит новые автомобили - процесс доставки Global Motors"
+                  src={autoCarrierImage}
+                  alt="Автовоз с новыми автомобилями - профессиональная доставка из Китая"
                   className="w-full h-auto rounded-2xl shadow-hero"
                 />
               </div>
