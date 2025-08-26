@@ -52,6 +52,8 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="https://t.me/manager_gm_bot"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition-smooth"
             >
               <Send size={16} />
@@ -59,6 +61,8 @@ const Header = () => {
             </a>
             <a
               href="https://wa.me/79254765528"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition-smooth"
             >
               <MessageCircle size={16} />
@@ -94,6 +98,8 @@ const Header = () => {
               <div className="flex flex-col space-y-2 pt-4">
                 <a
                   href="https://t.me/manager_gm_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition-smooth"
                 >
                   <Send size={16} />
@@ -101,6 +107,8 @@ const Header = () => {
                 </a>
                 <a
                   href="https://wa.me/79254765528"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center space-x-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition-smooth"
                 >
                   <MessageCircle size={16} />
