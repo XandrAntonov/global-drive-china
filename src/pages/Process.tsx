@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout/Layout";
 import ContactButtons from "@/components/UI/ContactButtons";
+import carTransportImage from "@/assets/car-transport.jpg";
 
 const Process = () => {
   const processSteps = [
@@ -71,13 +72,24 @@ const Process = () => {
       <div className="bg-gm-white">
         {/* Hero Section */}
         <section className="bg-gradient-hero text-gm-white py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Как, сколько, когда?
-            </h1>
-            <p className="text-xl text-gm-silver">
-              Подробный процесс доставки автомобиля из Китая — прозрачно и понятно
-            </p>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                  Как, сколько, когда?
+                </h1>
+                <p className="text-xl text-gm-silver">
+                  Подробный процесс доставки автомобиля из Китая — прозрачно и понятно
+                </p>
+              </div>
+              <div className="relative">
+                <img
+                  src={carTransportImage}
+                  alt="Автовоз перевозит новые автомобили - процесс доставки Global Motors"
+                  className="w-full h-auto rounded-2xl shadow-hero"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
