@@ -35,7 +35,7 @@ const Contacts = () => {
       platform: "Telegram",
       handle: "@manager_gm_bot",
       description: "Основной канал связи",
-      bgColor: "bg-slate-600 hover:bg-slate-700",
+      bgColor: "bg-blue-500 hover:bg-blue-600",
       icon: "Send"
     },
     {
