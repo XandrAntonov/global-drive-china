@@ -71,7 +71,7 @@ const Footer = () => {
                 <span>@manager_gm_bot</span>
               </a>
               <a
-                href="https://wa.me/79254765528"
+                href="https://api.whatsapp.com/send?phone=79254765528"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-smooth"

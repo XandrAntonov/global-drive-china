@@ -141,7 +141,7 @@ const Contacts = () => {
                   </div>
                   <p className="text-lg font-mono text-gm-black mb-4">{social.handle}</p>
                   <a
-                    href={social.platform === 'Telegram' ? 'https://t.me/manager_gm_bot' : 'https://wa.me/79254765528'}
+                    href={social.platform === 'Telegram' ? 'https://t.me/manager_gm_bot' : 'https://api.whatsapp.com/send?phone=79254765528'}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`inline-flex items-center justify-center w-full ${social.bgColor} text-white px-6 py-3 rounded-lg transition-smooth font-medium`}

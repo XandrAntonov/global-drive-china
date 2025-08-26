@@ -17,7 +17,7 @@ const ContactButtons = ({ className = "" }: ContactButtonsProps) => {
         <span>Написать в Telegram</span>
       </a>
       <a
-        href="https://wa.me/79254765528"
+        href="https://api.whatsapp.com/send?phone=79254765528"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center space-x-2 bg-emerald-500 text-white px-6 py-3 rounded-lg hover:bg-emerald-600 transition-smooth font-medium shadow-button"
