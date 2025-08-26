@@ -11,7 +11,7 @@ const ContactButtons = ({ className = "" }: ContactButtonsProps) => {
         href="https://t.me/manager_gm_bot"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center justify-center space-x-3 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-smooth shadow-button"
+        className="inline-flex items-center justify-center space-x-3 bg-slate-600 text-white px-6 py-3 rounded-lg hover:bg-slate-700 transition-smooth shadow-button"
       >
         <Send size={20} />
         <span className="font-medium">Telegram @manager_gm_bot</span>
@@ -20,7 +20,7 @@ const ContactButtons = ({ className = "" }: ContactButtonsProps) => {
         href="https://wa.me/79254765528"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center justify-center space-x-3 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-smooth shadow-button"
+        className="inline-flex items-center justify-center space-x-3 bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-smooth shadow-button"
       >
         <MessageCircle size={20} />
         <span className="font-medium">WhatsApp +7 925 476-55-28</span>

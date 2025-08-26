@@ -65,7 +65,7 @@ const Footer = () => {
                 href="https://t.me/manager_gm_bot"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-smooth"
+                className="flex items-center space-x-2 bg-slate-600 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-smooth"
               >
                 <Send size={18} />
                 <span>@manager_gm_bot</span>
@@ -74,7 +74,7 @@ const Footer = () => {
                 href="https://wa.me/79254765528"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-smooth"
+                className="flex items-center space-x-2 bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-smooth"
               >
                 <MessageCircle size={18} />
                 <span>+7 925 476-55-28</span>

@@ -35,14 +35,14 @@ const Contacts = () => {
       platform: "Telegram",
       handle: "@manager_gm_bot",
       description: "Основной канал связи",
-      bgColor: "bg-blue-600 hover:bg-blue-700",
+      bgColor: "bg-slate-600 hover:bg-slate-700",
       icon: "Send"
     },
     {
       platform: "WhatsApp", 
       handle: "+7 925 476-55-28",
       description: "Альтернативный способ связи",
-      bgColor: "bg-green-600 hover:bg-green-700",
+      bgColor: "bg-emerald-600 hover:bg-emerald-700",
       icon: "MessageCircle"
     }
   ];

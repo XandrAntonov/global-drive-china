@@ -54,7 +54,7 @@ const Header = () => {
               href="https://t.me/manager_gm_bot"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition-smooth"
+              className="flex items-center space-x-2 bg-slate-500 text-white px-3 py-2 rounded-lg hover:bg-slate-600 transition-smooth"
             >
               <Send size={16} />
               <span className="text-sm">Telegram</span>
@@ -63,7 +63,7 @@ const Header = () => {
               href="https://wa.me/79254765528"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition-smooth"
+              className="flex items-center space-x-2 bg-emerald-500 text-white px-3 py-2 rounded-lg hover:bg-emerald-600 transition-smooth"
             >
               <MessageCircle size={16} />
               <span className="text-sm">WhatsApp</span>
@@ -100,7 +100,7 @@ const Header = () => {
                   href="https://t.me/manager_gm_bot"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition-smooth"
+                  className="flex items-center space-x-2 bg-slate-500 text-white px-3 py-2 rounded-lg hover:bg-slate-600 transition-smooth"
                 >
                   <Send size={16} />
                   <span className="text-sm">Telegram</span>
@@ -109,7 +109,7 @@ const Header = () => {
                   href="https://wa.me/79254765528"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition-smooth"
+                  className="flex items-center space-x-2 bg-emerald-500 text-white px-3 py-2 rounded-lg hover:bg-emerald-600 transition-smooth"
                 >
                   <MessageCircle size={16} />
                   <span className="text-sm">WhatsApp</span>
