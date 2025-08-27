@@ -167,10 +167,6 @@ const Process = () => {
                   alt="Zeekr - быстрая доставка из Китая"
                   className="w-full h-auto rounded-2xl shadow-hero"
                 />
-                <div className="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg">
-                  <p className="font-medium">Zeekr 001</p>
-                  <p className="text-sm text-gray-300">25-35 дней доставка</p>
-                </div>
               </div>
             </div>
             

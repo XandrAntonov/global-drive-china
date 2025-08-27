@@ -144,10 +144,6 @@ const Home = () => {
                 alt="Lixiang - один из топовых китайских брендов"
                 className="w-full h-auto rounded-2xl shadow-hero"
               />
-              <div className="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg">
-                <p className="font-medium">Lixiang L9</p>
-                <p className="text-sm text-gray-300">Премиум электро-SUV</p>
-              </div>
             </div>
           </div>
         </div>

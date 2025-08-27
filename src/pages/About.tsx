@@ -110,7 +110,7 @@ const About = () => {
 
         {/* Timeline */}
         <section className="py-20 bg-gm-gray-light">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gm-black mb-6">Наша история</h2>
               <p className="text-xl text-gm-gray-dark">
@@ -118,42 +118,27 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-accent lg:hidden"></div>
-                
-                <div className="space-y-12">
-                  {milestones.map((milestone, index) => (
-                    <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} lg:flex-row`}>
-                      <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'} lg:pr-8 lg:text-right`}>
-                        <div className="bg-gm-white p-6 rounded-xl shadow-card">
-                          <div className="text-2xl font-bold text-gm-black mb-2">{milestone.year}</div>
-                          <h3 className="text-xl font-bold text-gm-black mb-2">{milestone.title}</h3>
-                          <p className="text-gm-gray-dark">{milestone.description}</p>
-                        </div>
-                      </div>
-                      
-                      <div className="absolute left-1/2 transform -translate-x-1/2 bg-gradient-accent text-gm-white p-3 rounded-full lg:relative lg:left-auto lg:transform-none">
-                        <span className="text-lg font-bold lg:hidden">{milestone.year}</span>
-                        <span className="hidden lg:block text-lg font-bold">{milestone.year.slice(-2)}</span>
-                      </div>
-                      
-                      <div className="w-1/2 lg:hidden"></div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+            <div className="relative">
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-accent"></div>
               
-              <div className="relative">
-                <img
-                  src={voyahCarImage}
-                  alt="Voyah - наша история развития"
-                  className="w-full h-auto rounded-2xl shadow-hero"
-                />
-                <div className="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg">
-                  <p className="font-medium">Voyah Free</p>
-                  <p className="text-sm text-gray-300">4 года на рынке</p>
-                </div>
+              <div className="space-y-12">
+                {milestones.map((milestone, index) => (
+                  <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                    <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
+                      <div className="bg-gm-white p-6 rounded-xl shadow-card">
+                        <div className="text-2xl font-bold text-gm-black mb-2">{milestone.year}</div>
+                        <h3 className="text-xl font-bold text-gm-black mb-2">{milestone.title}</h3>
+                        <p className="text-gm-gray-dark">{milestone.description}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute left-1/2 transform -translate-x-1/2 bg-gradient-accent text-gm-white p-3 rounded-full">
+                      <span className="text-lg font-bold">{milestone.year}</span>
+                    </div>
+                    
+                    <div className="w-1/2"></div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

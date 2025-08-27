@@ -189,10 +189,6 @@ const WhyUs = () => {
                   alt="Geely - качество по доступной цене"
                   className="w-full h-auto rounded-2xl shadow-hero"
                 />
-                <div className="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg">
-                  <p className="font-medium">Geely</p>
-                  <p className="text-sm text-gray-300">Экономия до 800к ₽</p>
-                </div>
               </div>
             </div>
           </div>
