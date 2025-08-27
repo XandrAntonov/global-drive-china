@@ -1,18 +1,47 @@
 import Layout from "@/components/Layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
-import avatrImage from "@/assets/avatr-07-car.jpg";
+
+// Import all car images
+import lixiangBlack from "@/assets/lixiang-l7-black.jpg";
+import lixiangWhite from "@/assets/lixiang-l7-white.jpg";
+import lixiangSilver from "@/assets/lixiang-l7-silver.jpg";
+import lixiangRed from "@/assets/lixiang-l7-red.jpg";
+import lixiangBlue from "@/assets/lixiang-l7-blue.jpg";
+
+import zeekrBlack from "@/assets/zeekr-001-black.jpg";
+import zeekrWhite from "@/assets/zeekr-001-white.jpg";
+import zeekrSilver from "@/assets/zeekr-001-silver.jpg";
+import zeekrGreen from "@/assets/zeekr-001-green.jpg";
+import zeekrGold from "@/assets/zeekr-001-gold.jpg";
+
+import geelyBlack from "@/assets/geely-starship-black.jpg";
+import geelyWhite from "@/assets/geely-starship-white.jpg";
+import geelySilver from "@/assets/geely-starship-silver.jpg";
+import geelyPurple from "@/assets/geely-starship-purple.jpg";
+import geelyTeal from "@/assets/geely-starship-teal.jpg";
+
+import voyahBlack from "@/assets/voyah-free-black.jpg";
+import voyahWhite from "@/assets/voyah-free-white.jpg";
+import voyahSilver from "@/assets/voyah-free-silver.jpg";
+import voyahBurgundy from "@/assets/voyah-free-burgundy.jpg";
+import voyahBrown from "@/assets/voyah-free-brown.jpg";
+
+import avatrBlack from "@/assets/avatr-07-black.jpg";
+import avatrWhite from "@/assets/avatr-07-white.jpg";
+import avatrSilver from "@/assets/avatr-07-silver.jpg";
+import avatrPink from "@/assets/avatr-07-pink.jpg";
+import avatrOrange from "@/assets/avatr-07-orange.jpg";
 
 interface CarColor {
   name: string;
   value: string;
-  filter: string;
+  image: string;
 }
 
 interface CarModel {
   id: string;
   name: string;
-  image: string;
   colors: CarColor[];
 }
 
@@ -20,61 +49,56 @@ const carModels: CarModel[] = [
   {
     id: "lixiang-l7",
     name: "LiXiang L7",
-    image: "/lovable-uploads/bc529fec-87f2-4b9f-9ac5-25fe981f0473.png",
     colors: [
-      { name: "Черный", value: "#000000", filter: "brightness(0.3)" },
-      { name: "Белый", value: "#FFFFFF", filter: "brightness(1.2) contrast(1.1)" },
-      { name: "Серебристый", value: "#C0C0C0", filter: "hue-rotate(0deg) saturate(0.3)" },
-      { name: "Красный", value: "#DC2626", filter: "hue-rotate(0deg) saturate(1.5) brightness(0.8)" },
-      { name: "Синий", value: "#2563EB", filter: "hue-rotate(200deg) saturate(1.3) brightness(0.7)" }
+      { name: "Черный", value: "#000000", image: lixiangBlack },
+      { name: "Белый", value: "#FFFFFF", image: lixiangWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: lixiangSilver },
+      { name: "Красный", value: "#DC2626", image: lixiangRed },
+      { name: "Синий", value: "#2563EB", image: lixiangBlue }
     ]
   },
   {
     id: "zeekr-001",
     name: "Zeekr 001",
-    image: "/lovable-uploads/df0a6e86-a028-4709-86a2-3f8a45242428.png",
     colors: [
-      { name: "Черный", value: "#000000", filter: "brightness(0.3)" },
-      { name: "Белый", value: "#FFFFFF", filter: "brightness(1.2) contrast(1.1)" },
-      { name: "Серебристый", value: "#C0C0C0", filter: "hue-rotate(0deg) saturate(0.3)" },
-      { name: "Зеленый", value: "#059669", filter: "hue-rotate(120deg) saturate(1.2) brightness(0.8)" },
-      { name: "Золотой", value: "#D97706", filter: "hue-rotate(45deg) saturate(1.1) brightness(0.9)" }
+      { name: "Черный", value: "#000000", image: zeekrBlack },
+      { name: "Белый", value: "#FFFFFF", image: zeekrWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: zeekrSilver },
+      { name: "Зеленый", value: "#059669", image: zeekrGreen },
+      { name: "Золотой", value: "#D97706", image: zeekrGold }
     ]
   },
   {
     id: "geely-galaxy",
     name: "Geely Galaxy Starship 7",
-    image: "/lovable-uploads/c313e781-6d89-4877-bb9e-fc2a9dc5d8ee.png",
     colors: [
-      { name: "Черный", value: "#000000", filter: "brightness(0.3)" },
-      { name: "Белый", value: "#FFFFFF", filter: "brightness(1.2) contrast(1.1)" },
-      { name: "Серебристый", value: "#C0C0C0", filter: "hue-rotate(0deg) saturate(0.3)" },
-      { name: "Фиолетовый", value: "#7C3AED", filter: "hue-rotate(270deg) saturate(1.4) brightness(0.7)" },
-      { name: "Бирюзовый", value: "#0891B2", filter: "hue-rotate(180deg) saturate(1.3) brightness(0.8)" }
+      { name: "Черный", value: "#000000", image: geelyBlack },
+      { name: "Белый", value: "#FFFFFF", image: geelyWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: geelySilver },
+      { name: "Фиолетовый", value: "#7C3AED", image: geelyPurple },
+      { name: "Бирюзовый", value: "#0891B2", image: geelyTeal }
     ]
   },
   {
     id: "voyah-free",
     name: "Voyah Free+",
-    image: "/lovable-uploads/e81e5db8-a557-49c3-9afe-aae256531d7d.png",
     colors: [
-      { name: "Черный", value: "#000000", filter: "brightness(0.3)" },
-      { name: "Белый", value: "#FFFFFF", filter: "brightness(1.2) contrast(1.1)" },
-      { name: "Серебристый", value: "#C0C0C0", filter: "hue-rotate(0deg) saturate(0.3)" },
-      { name: "Бордовый", value: "#991B1B", filter: "hue-rotate(350deg) saturate(1.2) brightness(0.6)" },
-      { name: "Коричневый", value: "#92400E", filter: "hue-rotate(30deg) saturate(0.8) brightness(0.7)" }
+      { name: "Черный", value: "#000000", image: voyahBlack },
+      { name: "Белый", value: "#FFFFFF", image: voyahWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: voyahSilver },
+      { name: "Бордовый", value: "#991B1B", image: voyahBurgundy },
+      { name: "Коричневый", value: "#92400E", image: voyahBrown }
     ]
   },
   {
     id: "avatr-07",
     name: "Avatr 07",
-    image: avatrImage,
     colors: [
-      { name: "Черный", value: "#000000", filter: "brightness(0.3)" },
-      { name: "Белый", value: "#FFFFFF", filter: "brightness(1.2) contrast(1.1)" },
-      { name: "Серебристый", value: "#C0C0C0", filter: "hue-rotate(0deg) saturate(0.3)" },
-      { name: "Розовый", value: "#EC4899", filter: "hue-rotate(320deg) saturate(1.3) brightness(0.8)" },
-      { name: "Оранжевый", value: "#EA580C", filter: "hue-rotate(20deg) saturate(1.2) brightness(0.9)" }
+      { name: "Черный", value: "#000000", image: avatrBlack },
+      { name: "Белый", value: "#FFFFFF", image: avatrWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: avatrSilver },
+      { name: "Розовый", value: "#EC4899", image: avatrPink },
+      { name: "Оранжевый", value: "#EA580C", image: avatrOrange }
     ]
   }
 ];
@@ -87,15 +111,12 @@ const CarConfigurationCard = ({ car }: { car: CarModel }) => {
       <CardContent className="p-6">
         <h3 className="text-xl font-semibold mb-4 text-center">{car.name}</h3>
         
-        {/* Car Image with Color Filter */}
+        {/* Car Image with Color Changes */}
         <div className="relative mb-6 bg-gradient-to-br from-background to-muted rounded-lg p-8 flex items-center justify-center min-h-[200px]">
           <img
-            src={car.image}
-            alt={car.name}
-            className="max-w-full max-h-[180px] object-contain transition-all duration-300"
-            style={{
-              filter: selectedColor.filter
-            }}
+            src={selectedColor.image}
+            alt={`${car.name} - ${selectedColor.name}`}
+            className="max-w-full max-h-[180px] object-contain transition-all duration-500 ease-in-out"
           />
         </div>
 
