@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout/Layout";
 import ContactButtons from "@/components/UI/ContactButtons";
 import autoCarrierImage from "@/assets/auto-carrier.jpg";
+import zeekrCarImage from "@/assets/zeekr-car.jpg";
 
 const Process = () => {
   const processSteps = [
@@ -130,7 +131,7 @@ const Process = () => {
 
         {/* Timing Table */}
         <section className="py-20 bg-gm-gray-light">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gm-black mb-4">Сроки доставки</h2>
               <p className="text-xl text-gm-gray-dark">
@@ -138,25 +139,39 @@ const Process = () => {
               </p>
             </div>
             
-            <div className="bg-gm-white rounded-2xl shadow-card overflow-hidden">
-              <div className="bg-gradient-accent text-gm-white p-6">
-                <div className="grid grid-cols-4 gap-4 font-bold text-center">
-                  <div>Тип заказа</div>
-                  <div>Производство</div>
-                  <div>Логистика до Хоргоса</div>
-                  <div>Общий срок*</div>
-                </div>
-              </div>
-              {deliveryTable.map((row, index) => (
-                <div key={index} className="p-6 border-b border-gm-gray-light last:border-b-0">
-                  <div className="grid grid-cols-4 gap-4 text-center">
-                    <div className="font-medium text-gm-black">{row.type}</div>
-                    <div className="text-gm-gray-dark">{row.production}</div>
-                    <div className="text-gm-gray-dark">{row.logistics}</div>
-                    <div className="font-bold text-gm-black">{row.total}</div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="bg-gm-white rounded-2xl shadow-card overflow-hidden">
+                <div className="bg-gradient-accent text-gm-white p-6">
+                  <div className="grid grid-cols-4 gap-4 font-bold text-center">
+                    <div>Тип заказа</div>
+                    <div>Производство</div>
+                    <div>Логистика до Хоргоса</div>
+                    <div>Общий срок*</div>
                   </div>
                 </div>
-              ))}
+                {deliveryTable.map((row, index) => (
+                  <div key={index} className="p-6 border-b border-gm-gray-light last:border-b-0">
+                    <div className="grid grid-cols-4 gap-4 text-center">
+                      <div className="font-medium text-gm-black">{row.type}</div>
+                      <div className="text-gm-gray-dark">{row.production}</div>
+                      <div className="text-gm-gray-dark">{row.logistics}</div>
+                      <div className="font-bold text-gm-black">{row.total}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="relative">
+                <img
+                  src={zeekrCarImage}
+                  alt="Zeekr - быстрая доставка из Китая"
+                  className="w-full h-auto rounded-2xl shadow-hero"
+                />
+                <div className="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg">
+                  <p className="font-medium">Zeekr 001</p>
+                  <p className="text-sm text-gray-300">25-35 дней доставка</p>
+                </div>
+              </div>
             </div>
             
             <div className="mt-6 text-center">

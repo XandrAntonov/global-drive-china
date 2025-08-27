@@ -7,6 +7,7 @@ import sedanCarImage from "@/assets/sedan-car.jpg";
 import carCollectionImage from "@/assets/car-collection.jpg";
 import bmwCarImage from "@/assets/bmw-showroom.jpg";
 import hyundaiCarImage from "@/assets/hyundai-showroom-wide.jpg";
+import lixiangCarImage from "@/assets/lixiang-car.jpg";
 
 const Home = () => {
   const [currentRate] = useState(12.13);
@@ -122,18 +123,32 @@ const Home = () => {
             <h2 className="text-4xl font-bold text-gm-black mb-6">Почему выбирают нас</h2>
             <p className="text-xl text-gm-gray-dark">Главные преимущества работы с Global Motors</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {advantages.map((advantage, index) => (
-              <div
-                key={index}
-                className="bg-gradient-card p-6 rounded-xl shadow-card hover:shadow-hero transition-smooth"
-              >
-                <div className="flex items-start space-x-4">
-                  <span className="text-2xl text-green-600">{advantage.icon}</span>
-                  <p className="text-lg text-gm-black font-medium">{advantage.text}</p>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {advantages.map((advantage, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-card p-6 rounded-xl shadow-card hover:shadow-hero transition-smooth"
+                >
+                  <div className="flex items-start space-x-4">
+                    <span className="text-2xl text-green-600">{advantage.icon}</span>
+                    <p className="text-lg text-gm-black font-medium">{advantage.text}</p>
+                  </div>
                 </div>
+              ))}
+            </div>
+            <div className="relative">
+              <img
+                src={lixiangCarImage}
+                alt="Lixiang - один из топовых китайских брендов"
+                className="w-full h-auto rounded-2xl shadow-hero"
+              />
+              <div className="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg">
+                <p className="font-medium">Lixiang L9</p>
+                <p className="text-sm text-gray-300">Премиум электро-SUV</p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
