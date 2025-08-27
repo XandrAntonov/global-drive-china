@@ -37,17 +37,17 @@ const Home = () => {
     {
       category: "Топовые китайские бренды",
       brands: ["Lixiang", "ZEEKR", "Voyah", "Avatr"],
-      image: suvCarImage,
+      image: "/lovable-uploads/bc529fec-87f2-4b9f-9ac5-25fe981f0473.png",
     },
     {
       category: "Европейские марки из Китая",
       brands: ["BMW", "Mercedes"],
-      image: sedanCarImage,
+      image: "/lovable-uploads/e81e5db8-a557-49c3-9afe-aae256531d7d.png",
     },
     {
       category: "Корейские и японские авто",
       brands: ["Hyundai", "Kia", "Toyota", "Honda", "Lexus", "Nissan"],
-      image: carCollectionImage,
+      image: "/lovable-uploads/c313e781-6d89-4877-bb9e-fc2a9dc5d8ee.png",
     },
   ];
 
