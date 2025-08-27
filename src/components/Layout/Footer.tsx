@@ -3,16 +3,16 @@ import { Send, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gm-black text-gm-white py-12">
+    <footer className="bg-gm-black text-gm-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
+            <div className="flex items-start mb-4">
               <img 
                 src="/lovable-uploads/6287943d-7958-4b61-b322-3bec08b63472.png" 
                 alt="Global Motors - Авто из Китая" 
-                className="h-24 w-auto"
+                className="h-full min-h-[200px] w-auto object-contain"
               />
             </div>
             <p className="text-gm-silver mb-6">
