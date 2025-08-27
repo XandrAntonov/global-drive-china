@@ -19,13 +19,13 @@ const Header = () => {
   return (
     <header className="bg-gm-white shadow-card sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center min-h-[80px]">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center h-full py-2">
             <img 
               src="/lovable-uploads/6287943d-7958-4b61-b322-3bec08b63472.png" 
               alt="Global Motors - Авто из Китая" 
-              className="h-16 w-auto"
+              className="h-full max-h-[76px] w-auto object-contain"
             />
           </Link>
 

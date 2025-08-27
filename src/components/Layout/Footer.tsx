@@ -8,29 +8,27 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-stretch min-h-[300px]">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2 py-12">
-            <div className="flex items-start space-x-6 h-full">
+            <div className="flex items-center mb-4">
               <img 
                 src="/lovable-uploads/6287943d-7958-4b61-b322-3bec08b63472.png" 
                 alt="Global Motors - Авто из Китая" 
-                className="h-full max-h-[250px] w-auto object-contain flex-shrink-0"
+                className="h-8 w-auto"
               />
-              <div className="flex flex-col">
-                <p className="text-gm-silver mb-6">
-                  Экономим от 600 000 до 800 000 ₽ на покупке авто и доставляем машину быстрее всех в России.
-                </p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-2">
-                    <span>🏢</span>
-                    <span className="text-gm-silver">Москва, Электродная 2, стр. 34</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span>✉️</span>
-                    <a href="mailto:info@globalmotors.ru" className="text-gm-silver hover:text-gm-white transition-smooth">
-                      info@globalmotors.ru
-                    </a>
-                  </div>
-                </div>
+            </div>
+            <p className="text-gm-silver mb-6">
+              Экономим от 600 000 до 800 000 ₽ на покупке авто и доставляем машину быстрее всех в России.
+            </p>
+            
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <span>🏢</span>
+                <span className="text-gm-silver">Москва, Электродная 2, стр. 34</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <span>✉️</span>
+                <a href="mailto:info@globalmotors.ru" className="text-gm-silver hover:text-gm-white transition-smooth">
+                  info@globalmotors.ru
+                </a>
               </div>
             </div>
           </div>
