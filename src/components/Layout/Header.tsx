@@ -21,14 +21,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-gradient-accent p-2 rounded-lg">
-              <span className="text-gm-white font-bold text-xl">GM</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-gm-black">Global Motors</h1>
-              <p className="text-sm text-gm-gray-dark">Авто из Китая</p>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/6287943d-7958-4b61-b322-3bec08b63472.png" 
+              alt="Global Motors - Авто из Китая" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
