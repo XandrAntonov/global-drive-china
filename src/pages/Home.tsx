@@ -77,7 +77,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src={heroCarImage}
+                src="/lovable-uploads/bc529fec-87f2-4b9f-9ac5-25fe981f0473.png"
                 alt="Китайский автомобиль серебристого цвета"
                 className="w-full h-auto rounded-2xl shadow-hero"
               />

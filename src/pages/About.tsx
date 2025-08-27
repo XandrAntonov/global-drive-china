@@ -77,7 +77,7 @@ const About = () => {
               </div>
               <div className="relative">
                 <img
-                  src={sedanCarImage}
+                  src="/lovable-uploads/e81e5db8-a557-49c3-9afe-aae256531d7d.png"
                   alt="О компании Global Motors"
                   className="w-full h-auto rounded-2xl shadow-hero"
                 />

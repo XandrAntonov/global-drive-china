@@ -100,7 +100,7 @@ const WhyUs = () => {
               </div>
               <div className="relative">
                 <img
-                  src={carCollectionImage}
+                  src="/lovable-uploads/c313e781-6d89-4877-bb9e-fc2a9dc5d8ee.png"
                   alt="Коллекция автомобилей Global Motors"
                   className="w-full h-auto rounded-2xl shadow-hero"
                 />

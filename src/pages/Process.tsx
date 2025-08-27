@@ -84,7 +84,7 @@ const Process = () => {
               </div>
               <div className="relative">
                 <img
-                  src={autoCarrierImage}
+                  src="/lovable-uploads/df0a6e86-a028-4709-86a2-3f8a45242428.png"
                   alt="Автовоз с новыми автомобилями - профессиональная доставка из Китая"
                   className="w-full h-auto rounded-2xl shadow-hero"
                 />
