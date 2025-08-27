@@ -182,7 +182,19 @@ const Home = () => {
               </div>
             ))}
           </div>
-          <div className="mt-12 bg-gradient-card p-8 rounded-2xl shadow-card">
+          
+          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-2xl p-6">
+            <div className="text-center">
+              <h3 className="text-xl font-semibold text-blue-800 mb-2">
+                Доступные конфигурации уточняйте у наших менеджеров
+              </h3>
+              <p className="text-blue-600">
+                Получите полную информацию о доступных опциях и комплектациях
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-8 bg-gradient-card p-8 rounded-2xl shadow-card">
             <h3 className="text-2xl font-bold text-gm-black mb-4">Б/у авто под заказ</h3>
             <p className="text-lg text-gm-gray-dark mb-4">
               Экономия от 500 000 ₽ — мы также привозим подержанные автомобили под заказ
