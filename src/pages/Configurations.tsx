@@ -2,12 +2,36 @@ import Layout from "@/components/Layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 
-// Import more accurate car images
-import lixiangRealBlack from "@/assets/lixiang-l7-real-black.jpg";
-import zeekrRealBlack from "@/assets/zeekr-001-real-black.jpg";
-import geelyRealBlack from "@/assets/geely-starship-real-black.jpg";
-import voyahRealBlack from "@/assets/voyah-free-real-black.jpg";
-import avatrRealBlack from "@/assets/avatr-07-real-black.jpg";
+// Import all car images for all colors
+import lixiangBlack from "@/assets/lixiang-l7-real-black.jpg";
+import lixiangWhite from "@/assets/lixiang-l7-real-white.jpg";
+import lixiangSilver from "@/assets/lixiang-l7-real-silver.jpg";
+import lixiangRed from "@/assets/lixiang-l7-real-red.jpg";
+import lixiangBlue from "@/assets/lixiang-l7-real-blue.jpg";
+
+import zeekrBlack from "@/assets/zeekr-001-real-black.jpg";
+import zeekrWhite from "@/assets/zeekr-001-real-white.jpg";
+import zeekrSilver from "@/assets/zeekr-001-real-silver.jpg";
+import zeekrGreen from "@/assets/zeekr-001-real-green.jpg";
+import zeekrGold from "@/assets/zeekr-001-real-gold.jpg";
+
+import geelyBlack from "@/assets/geely-starship-real-black.jpg";
+import geelyWhite from "@/assets/geely-starship-real-white.jpg";
+import geelySilver from "@/assets/geely-starship-real-silver.jpg";
+import geelyPurple from "@/assets/geely-starship-real-purple.jpg";
+import geelyTeal from "@/assets/geely-starship-real-teal.jpg";
+
+import voyahBlack from "@/assets/voyah-free-real-black.jpg";
+import voyahWhite from "@/assets/voyah-free-real-white.jpg";
+import voyahSilver from "@/assets/voyah-free-real-silver.jpg";
+import voyahBurgundy from "@/assets/voyah-free-real-burgundy.jpg";
+import voyahBrown from "@/assets/voyah-free-real-brown.jpg";
+
+import avatrBlack from "@/assets/avatr-07-real-black.jpg";
+import avatrWhite from "@/assets/avatr-07-real-white.jpg";
+import avatrSilver from "@/assets/avatr-07-real-silver.jpg";
+import avatrPink from "@/assets/avatr-07-real-pink.jpg";
+import avatrOrange from "@/assets/avatr-07-real-orange.jpg";
 
 interface CarColor {
   name: string;
@@ -26,55 +50,55 @@ const carModels: CarModel[] = [
     id: "lixiang-l7",
     name: "LiXiang L7",
     colors: [
-      { name: "Черный", value: "#000000", image: lixiangRealBlack },
-      { name: "Белый", value: "#FFFFFF", image: lixiangRealBlack },
-      { name: "Серебристый", value: "#C0C0C0", image: lixiangRealBlack },
-      { name: "Красный", value: "#DC2626", image: lixiangRealBlack },
-      { name: "Синий", value: "#2563EB", image: lixiangRealBlack }
+      { name: "Черный", value: "#000000", image: lixiangBlack },
+      { name: "Белый", value: "#FFFFFF", image: lixiangWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: lixiangSilver },
+      { name: "Красный", value: "#DC2626", image: lixiangRed },
+      { name: "Синий", value: "#2563EB", image: lixiangBlue }
     ]
   },
   {
     id: "zeekr-001",
     name: "Zeekr 001",
     colors: [
-      { name: "Черный", value: "#000000", image: zeekrRealBlack },
-      { name: "Белый", value: "#FFFFFF", image: zeekrRealBlack },
-      { name: "Серебристый", value: "#C0C0C0", image: zeekrRealBlack },
-      { name: "Зеленый", value: "#059669", image: zeekrRealBlack },
-      { name: "Золотой", value: "#D97706", image: zeekrRealBlack }
+      { name: "Черный", value: "#000000", image: zeekrBlack },
+      { name: "Белый", value: "#FFFFFF", image: zeekrWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: zeekrSilver },
+      { name: "Зеленый", value: "#059669", image: zeekrGreen },
+      { name: "Золотой", value: "#D97706", image: zeekrGold }
     ]
   },
   {
     id: "geely-galaxy",
     name: "Geely Galaxy Starship 7",
     colors: [
-      { name: "Черный", value: "#000000", image: geelyRealBlack },
-      { name: "Белый", value: "#FFFFFF", image: geelyRealBlack },
-      { name: "Серебристый", value: "#C0C0C0", image: geelyRealBlack },
-      { name: "Фиолетовый", value: "#7C3AED", image: geelyRealBlack },
-      { name: "Бирюзовый", value: "#0891B2", image: geelyRealBlack }
+      { name: "Черный", value: "#000000", image: geelyBlack },
+      { name: "Белый", value: "#FFFFFF", image: geelyWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: geelySilver },
+      { name: "Фиолетовый", value: "#7C3AED", image: geelyPurple },
+      { name: "Бирюзовый", value: "#0891B2", image: geelyTeal }
     ]
   },
   {
     id: "voyah-free",
     name: "Voyah Free+",
     colors: [
-      { name: "Черный", value: "#000000", image: voyahRealBlack },
-      { name: "Белый", value: "#FFFFFF", image: voyahRealBlack },
-      { name: "Серебристый", value: "#C0C0C0", image: voyahRealBlack },
-      { name: "Бордовый", value: "#991B1B", image: voyahRealBlack },
-      { name: "Коричневый", value: "#92400E", image: voyahRealBlack }
+      { name: "Черный", value: "#000000", image: voyahBlack },
+      { name: "Белый", value: "#FFFFFF", image: voyahWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: voyahSilver },
+      { name: "Бордовый", value: "#991B1B", image: voyahBurgundy },
+      { name: "Коричневый", value: "#92400E", image: voyahBrown }
     ]
   },
   {
     id: "avatr-07",
     name: "Avatr 07",
     colors: [
-      { name: "Черный", value: "#000000", image: avatrRealBlack },
-      { name: "Белый", value: "#FFFFFF", image: avatrRealBlack },
-      { name: "Серебристый", value: "#C0C0C0", image: avatrRealBlack },
-      { name: "Розовый", value: "#EC4899", image: avatrRealBlack },
-      { name: "Оранжевый", value: "#EA580C", image: avatrRealBlack }
+      { name: "Черный", value: "#000000", image: avatrBlack },
+      { name: "Белый", value: "#FFFFFF", image: avatrWhite },
+      { name: "Серебристый", value: "#C0C0C0", image: avatrSilver },
+      { name: "Розовый", value: "#EC4899", image: avatrPink },
+      { name: "Оранжевый", value: "#EA580C", image: avatrOrange }
     ]
   }
 ];
