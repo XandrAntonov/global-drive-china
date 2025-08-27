@@ -8,7 +8,7 @@ import Process from "./pages/Process";
 import WhyUs from "./pages/WhyUs";
 import About from "./pages/About";
 import Contacts from "./pages/Contacts";
-import Configurations from "./pages/Configurations";
+
 import ThankYou from "./pages/ThankYou";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -29,7 +29,7 @@ const App = () => (
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/configurations" element={<Configurations />} />
+          
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
