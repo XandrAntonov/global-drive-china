@@ -25,7 +25,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/6287943d-7958-4b61-b322-3bec08b63472.png" 
               alt="Global Motors - Авто из Китая" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 

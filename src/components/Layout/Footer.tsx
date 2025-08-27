@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/6287943d-7958-4b61-b322-3bec08b63472.png" 
                 alt="Global Motors - Авто из Китая" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-gm-silver mb-6">
