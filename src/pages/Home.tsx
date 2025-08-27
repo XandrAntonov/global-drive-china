@@ -5,8 +5,8 @@ import heroCarImage from "@/assets/hero-car.jpg";
 import suvCarImage from "@/assets/suv-car.jpg";
 import sedanCarImage from "@/assets/sedan-car.jpg";
 import carCollectionImage from "@/assets/car-collection.jpg";
-import bmwCarImage from "@/assets/bmw-car.jpg";
-import hyundaiCarImage from "@/assets/hyundai-car.jpg";
+import bmwCarImage from "@/assets/bmw-showroom.jpg";
+import hyundaiCarImage from "@/assets/hyundai-showroom.jpg";
 
 const Home = () => {
   const [currentRate] = useState(12.13);
